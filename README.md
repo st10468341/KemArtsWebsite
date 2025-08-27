@@ -11,32 +11,31 @@ The website will provide a professional space for growth.
 •	Provide an online store where prints and originals can be purchased securely.
 •	Create a professional portfolio to attract gallery opportunities and collaborations.
 •	Establish a mailing list to keep audiences engaged with exhibitions and new collections.
-3. Current Website Analysis
+<img width="707" height="597" alt="sitemap" src="https://github.com/user-attachments/assets/7093eff0-2c86-4331-b296-01ff04f605e7" />
+4. Current Website Analysis
 Currently, KEM Arts relies only on Instagram. While it provides strong visuals and good engagement, it lacks e-commerce tools, structured portfolios, and professional presentation. A website will build on this foundation by adding sales functionality and a polished image.
-4. Proposed Website Features and Functionality
+5. Proposed Website Features and Functionality
 The website will feature:
 •	Homepage with featured and recent artwork and links to collections.
 •	About Page with an artist biography.
 •	Gallery/Portfolio with categorized works.
-•	Shop with e-commerce integration for prints and originals.
 •	Contact Page with a form and social links.
-•	Newsletter subscription for regular updates.
-5. Design and User Experience
+ 
+6. Design and User Experience
 The design will highlight the art while keeping usability simple.
 •	Color Scheme: Neutral backgrounds with accents from the artwork.
 •	Typography: Modern sans-serif (Aptos) for readability and structure.
 •	Layout: Grid-based, minimalist, and image-focused.
 •	UX: Mobile optimization, quick loading, and a smooth checkout process.
-6. Technical Requirements
+7. Technical Requirements
 The site will require reliable hosting (e.g., Bluehost), a domain name such as kemarts.com, and development with HTML, CSS, and JavaScript. WordPress or Shopify will be used for content management and e-commerce.
-7. Timeline and Milestones
+8. Timeline and Milestones
 •	Week 1–2: Planning and wireframes.
 •	Week 3–4: Development and content upload.
 •	Week 5: Testing across devices.
 •	Week 6: Launch and analytics setup.
-8. Budget
+9. Budget
 •	Domain and hosting: ±$100/year.
 •	Development and design: $1,500–$2,000.
 •	Maintenance and updates: $200/year.
-
 
