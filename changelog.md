@@ -11,3 +11,5 @@ Added Body text to about page.
 Added contact details to the bottom of the about page.
 
 Added description text to products page.
+
+Added picture table to products page.
