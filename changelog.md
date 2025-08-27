@@ -13,3 +13,7 @@ Added contact details to the bottom of the about page.
 Added description text to products page.
 
 Added picture table to products page.
+
+Added contact form to contact page.
+
+Added contact information to contact page.
