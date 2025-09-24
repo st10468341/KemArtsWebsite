@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+header {
+    a {
+        color: white;
+    }
+
+    a:hover {
+        color: black;
+    }
+
+    background-color: #1f2a35;
+    padding: 1cm;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
