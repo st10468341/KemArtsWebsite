@@ -566,6 +566,8 @@ footer a:hover {
 
 .contact textarea {
     height: 150px;
+    font-family: arial, sans-serif;
+    ;
 }
 
 .contact button {
@@ -717,4 +719,100 @@ footer a:hover {
         max-width: 100%;
         font-size: 1rem;
     }
+}
+
+/* Products / Gallery Page Cards */
+.artworks-gallery {
+    padding: 3rem 2rem;
+    background-color: #eaeaea;
+    text-align: center;
+}
+
+.artworks-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.art-card {
+    background-color: white;
+    border-radius: 0px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border: #000000 3px solid;
+    gap: 1rem;
+}
+
+.art-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 0px;
+    transition: transform 0.4s, box-shadow 0.4s;
+    border: #000000 3px solid;
+}
+
+.art-card h3 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #1f2a35;
+}
+
+.art-card .price {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: #1f2a35;
+    /* red color for Sold */
+    font-size: 1.2rem;
+}
+
+.art-card .price-sold {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: #d9534f;
+    /* red color for Sold */
+    font-size: 1.2rem;
+}
+
+/* Contact button under each art card */
+.art-card .contact-btn {
+    display: inline-block;
+    margin-top: 0.7rem;
+    padding: 0.5rem 1.2rem;
+    background-color: #1f2a35;
+    /* dark color to match theme */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.art-card .contact-btn:hover {
+    background-color: #3c4b5a;
+    transform: translateY(-2px);
+}
+
+
+/* Artworks grid for Products Page */
+.artworks-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+
+.art-card:hover {
+    transform: translateY(-5px) scale(1.02);
 }

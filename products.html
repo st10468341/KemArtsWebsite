@@ -1,86 +1,230 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>KEM Arts</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - KEM Arts</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<!-- Header / Navigation -->
-<header>
-    <div class="nav-container">
-        <div class="logo"><a href="index.html">KEM Arts</a></div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="products.html">Gallery</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact us</a>
-        </nav>
-    </div>
-</header>
 
 <body>
-    <h1>Gallery</h1>
+    <!-- Header / Navigation -->
+    <header>
+        <div class="nav-container">
+            <div class="logo"><a href="index.html">KEM Arts</a></div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="products.html" class="active">Gallery</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact us</a>
+            </nav>
+        </div>
+    </header>
 
-    <br>
-    <h1>Paintings for sale</h1>
-    <p>A collection of semi-abstract wild animal artworks created with acrylic paints and palette knives. Each piece
-        captures the spirit and energy of the animal through bold textures, layered colours, and expressive strokes,
-        making every canvas one of a kind.</p>
-    <!-- This displays a table of art works with their titles and prices -->
-    <table border="1">
-        <tr>
-            <td>Hyena</td>
-            <td>Hippo</td>
-            <td>Baboon</td>
-            <td>Buffalo</td>
-            <td>Elephant</td>
-            <td>Lion</td>
-        </tr>
-        <tr>
-            <td> <img src="images/Hyena.webp" width="200" alt="Hyena Painting"> </td>
-            <td> <img src="images/Hippo.webp" width="200" alt="Hippo painting"> </td>
-            <td> <img src="images/Baboon.webp" width="200" alt="Baboon painting"> </td>
-            <td> <img src="images/Buffalo.webp" width="200" alt="Buffalo painting"> </td>
-            <td> <img src="images/Elephant.webp" width="200" alt="Elephant painting"> </td>
-            <td> <img src="images/Lion.webp" width="200" alt="Lion painting"> </td>
-        </tr>
-        <tr>
-            <td>R1200.00</td>
-            <td>R1200.00</td>
-            <td>R1200.00</td>
-            <td>R1200.00</td>
-            <td>R1200.00</td>
-            <td>R1200.00</td>
-        </tr>
-    </table>
-    <br>
-    <table border="1">
-        <tr>
-            <td>Rhino</td>
-            <td>Cheetah</td>
-            <td>Zebra</td>
-            <td>Kudu</td>
-            <td>Warthog</td>
-            <td>Dark Lion</td>
-        </tr>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1 class="slide-in-right">Gallery</h1>
+            <p class="slide-in-right">
+                Explore a collection of semi-abstract wild animal artworks created with acrylic paints and palette
+                knives.
+                Each piece is expressive, textured, and unique.
+            </p>
+        </div>
+    </section>
 
-        <tr>
-            <td> <img src="images/Rhino.webp" width="200" alt="Rhino painting"> </td>
-            <td> <img src="images/Cheetah.webp" width="200" alt="Cheetah painting"> </td>
-            <td> <img src="images/Zebra.webp" width="200" alt="Zebra painting"> </td>
-            <td> <img src="images/Kudu-Old.webp" width="200" alt="Kudu painting"> </td>
-            <td> <img src="images/Warthog.webp" width="200" alt="Warthog painting"> </td>
-            <td> <img src="images/Lion-Old.webp" width="200" alt="Lion painting"> </td>
-        </tr>
-        <tr>
-            <td>R1200.00</td>
-            <td>R1200.00</td>
-            <td>R1200.00</td>
-            <td>Sold</td>
-            <td>R1200.00</td>
-            <td>Sold</td>
-        </tr>
-    </table>
+    <!-- Artworks Gallery Section -->
+    <section class="artworks-gallery">
+        <div class="artworks-container">
+            <!-- 25 Artwork Cards -->
+            <div class="art-card">
+                <img src="images/crocodile.webp" alt="crocodile">
+                <h3>Crocodile</h3>
+                <p class="price">R 1,200.00</p>
+                <a href="contact.html" class="contact-btn">Contact</a>
+            </div>
+
+            <div class="art-card">
+                <img src="images/placeholder2.webp" alt="Artwork 2">
+                <h3>Artwork 2</h3>
+                <p class="price">Sold</p>
+                <a href="contact.html" class="contact-btn">Contact</a>
+            </div>
+
+            <div class="art-card">
+                <img src="images/placeholder3.webp" alt="Artwork 3">
+                <h3>Artwork 3</h3>
+                <p class="price">Sold</p>
+                <a href="contact.html" class="contact-btn">Contact</a>
+            </div>
+
+            <div class="art-card">
+                <img src="images/placeholder4.webp" alt="Artwork 4">
+                <h3>Artwork 4</h3>
+                <p class="price">Sold</p>
+                <a href="contact.html" class="contact-btn">Contact</a>
+            </div>
+
+            <div class="art-card">
+                <img src="images/placeholder5.webp" alt="Artwork 5">
+                <h3>Artwork 5</h3>
+                <p class="price">Sold</p>
+                <a href="contact.html" class="contact-btn">Contact</a>
+            </div>
+
+            <div class="art-card">
+                <img src="images/placeholder6.webp" alt="Artwork 6">
+                <h3>Artwork 6</h3>
+                <p class="price">Sold</p>
+                <a href="contact.html" class="contact-btn">Contact</a>
+            </div>
+
+            <div class="art-card">
+                <img src="images/placeholder7.webp" alt="Artwork 7">
+                <h3>Artwork 7</h3>
+                <p class="price">Sold</p>
+                <a href="contact.html" class="contact-btn">Contact</a>
+            </div>
+
+            <div class="art-card">
+                <img src="images/placeholder8.webp" alt="Artwork 8">
+                <h3>Artwork 8</h3>
+                <p class="price">Sold</p>
+                <a href="contact.html" class="contact-btn">Contact</a>
+            </div>
+
+            <div class="art-card">
+                <img src="images/placeholder9.webp" alt="Artwork 9">
+                <h3>Artwork 9</h3>
+                <p class="price">Sold</p>
+                <a href="contact.html" class="contact-btn">Contact</a>
+            </div>
+
+            <div class="art-card">
+                <img src="images/placeholder10.webp" alt="Artwork 10">
+                <h3>Artwork 10</h3>
+                <p class="price">Sold</p>
+                <a href="contact.html" class="contact-btn">Contact</a>
+            </div>
+
+            <div class="art-card">
+                <img src="images/placeholder11.webp" alt="Artwork 11">
+                <h3>Artwork 11</h3>
+                <p class="price">Sold</p>
+                <a href="contact.html" class="contact-btn">Contact</a>
+            </div>
+
+            <div class="art-card">
+                <img src="images/placeholder12.webp" alt="Artwork 12">
+                <h3>Artwork 12</h3>
+                <p class="price">Sold</p>
+                <a href="contact.html" class="contact-btn">Contact</a>
+            </div>
+
+            <div class="art-card">
+                <img src="images/placeholder13.webp" alt="Artwork 13">
+                <h3>Artwork 13</h3>
+                <p class="price">Sold</p>
+                <a href="contact.html" class="contact-btn">Contact</a>
+            </div>
+
+            <div class="art-card">
+                <img src="images/placeholder14.webp" alt="Artwork 14">
+                <h3>Artwork 14</h3>
+                <p class="price">Sold</p>
+                <a href="contact.html" class="contact-btn">Contact</a>
+            </div>
+
+            <div class="art-card">
+                <img src="images/placeholder15.webp" alt="Artwork 15">
+                <h3>Artwork 15</h3>
+                <p class="price">Sold</p>
+                <a href="contact.html" class="contact-btn">Contact</a>
+            </div>
+
+            <div class="art-card">
+                <img src="images/placeholder16.webp" alt="Artwork 16">
+                <h3>Artwork 16</h3>
+                <p class="price">Sold</p>
+                <a href="contact.html" class="contact-btn">Contact</a>
+            </div>
+
+            <div class="art-card">
+                <img src="images/placeholder17.webp" alt="Artwork 17">
+                <h3>Artwork 17</h3>
+                <p class="price">Sold</p>
+                <a href="contact.html" class="contact-btn">Contact</a>
+            </div>
+
+            <div class="art-card">
+                <img src="images/placeholder18.webp" alt="Artwork 18">
+                <h3>Artwork 18</h3>
+                <p class="price">Sold</p>
+                <a href="contact.html" class="contact-btn">Contact</a>
+            </div>
+
+            <div class="art-card">
+                <img src="images/placeholder19.webp" alt="Artwork 19">
+                <h3>Artwork 19</h3>
+                <p class="price">Sold</p>
+                <a href="contact.html" class="contact-btn">Contact</a>
+            </div>
+
+            <div class="art-card">
+                <img src="images/placeholder20.webp" alt="Artwork 20">
+                <h3>Artwork 20</h3>
+                <p class="price">Sold</p>
+                <a href="contact.html" class="contact-btn">Contact</a>
+            </div>
+
+            <div class="art-card">
+                <img src="images/placeholder21.webp" alt="Artwork 21">
+                <h3>Artwork 21</h3>
+                <p class="price">Sold</p>
+                <a href="contact.html" class="contact-btn">Contact</a>
+            </div>
+
+            <div class="art-card">
+                <img src="images/placeholder22.webp" alt="Artwork 22">
+                <h3>Artwork 22</h3>
+                <p class="price">Sold</p>
+                <a href="contact.html" class="contact-btn">Contact</a>
+            </div>
+
+            <div class="art-card">
+                <img src="images/placeholder23.webp" alt="Artwork 23">
+                <h3>Artwork 23</h3>
+                <p class="price">Sold</p>
+                <a href="contact.html" class="contact-btn">Contact</a>
+            </div>
+
+            <div class="art-card">
+                <img src="images/placeholder24.webp" alt="Artwork 24">
+                <h3>Artwork 24</h3>
+                <p class="price">Sold</p>
+                <a href="contact.html" class="contact-btn">Contact</a>
+            </div>
+
+            <div class="art-card">
+                <img src="images/placeholder25.webp" alt="Artwork 25">
+                <h3>Artwork 25</h3>
+                <p class="price">Sold</p>
+                <a href="contact.html" class="contact-btn">Contact</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Email: <a href="mailto:KEMArts2025@gmail.com">KEMArts2025@gmail.com</a></p>
+        <p>Phone: <a href="tel:0832290861">083 229 0861</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/k.e.m.arts/">@K.E.M.arts</a></p>
+        <p>Coffee Shop Location: <a
+                href="https://www.google.com/maps/place/Issie+Kitchen+Caf%C3%A9,+10+Van+Riebeeck+St,+Bredasdorp,+7280">Issie's
+                Kitchen Cafe</a></p>
+        <p>&copy; 2025 KEM Arts. All rights reserved.</p>
+    </footer>
 </body>
-
 
 </html>
