@@ -148,8 +148,17 @@ body {
     scroll-behavior: smooth;
     overflow-y: scroll;
     font-size: 150%;
+    overflow-x: hidden;
+    overflow-x: hidden;
 
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 
 /* Header & Navigation */
 header {
@@ -159,6 +168,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    width: 100%;
 }
 
 .nav-container {
@@ -206,7 +216,6 @@ nav a:hover {
     background-color: #eaeaea;
     flex-wrap: wrap;
     text-align: center;
-    animation: fadeIn 1s ease-in-out;
 }
 
 .hero-img {
@@ -230,11 +239,11 @@ nav a:hover {
 /* Section Animations */
 .fade-in {
     opacity: 0;
-    animation: fadeIn 1s forwards;
+    animation: fadeIn 0.3s forwards;
 }
 
 .fade-in.delay-1 {
-    animation-delay: 0.5s;
+    animation-delay: 0.3s;
 }
 
 .slide-in-left {
@@ -439,8 +448,9 @@ footer {
     background-color: #1f2a35;
     color: #fff;
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
     margin-top: 0;
+    font-size: 70%;
 }
 
 footer a {
@@ -510,7 +520,7 @@ footer a:hover {
 }
 
 .hero-text-contact {
-    font-size: 2rem;
+    font-size: 350%;
     max-width: 600px;
     margin: 0;
     text-align: left;
