@@ -584,3 +584,137 @@ footer a:hover {
 .spacer {
     height: 3rem;
 }
+
+/* Hero Section - About */
+.about-hero {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    /* left image / text / right image */
+    align-items: center;
+    justify-items: center;
+    height: 100vh;
+    overflow: hidden;
+    gap: 1rem;
+    padding: 0 0;
+}
+
+.about-hero .hero-left,
+.about-hero .hero-right {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-width: 150px;
+    border-radius: 0;
+    /* stops images from shrinking too small */
+}
+
+.about-hero .hero-right {
+    transform: scaleX(-1);
+}
+
+.about-hero .hero-text {
+    text-align: center;
+    max-width: 900px;
+    min-width: 200px;
+    padding: 0 1rem;
+}
+
+/* Responsive: hide both images together */
+@media (max-width: 800px) {
+    .about-hero {
+        grid-template-columns: 1fr;
+        /* single column */
+        height: auto;
+    }
+
+    .about-hero .hero-left,
+    .about-hero .hero-right {
+        display: none;
+    }
+
+    .about-hero .hero-text {
+        width: 100%;
+        font-size: 1rem;
+        padding: 1rem;
+    }
+}
+
+/* Artist Section */
+/* --- Section Wrapper & Alternating Layout --- */
+/* --- Section Wrapper & Alternating Layout --- */
+.section-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* center content horizontally */
+    gap: 3rem;
+    margin-top: 3rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Section images */
+.section-img {
+    width: 350px;
+    /* make images bigger */
+    height: 350px;
+    /* equal height for consistency */
+    object-fit: cover;
+    /* crop without distortion */
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.section-img:hover {
+    transform: scale(1.05);
+}
+
+.section-main-text {
+    text-align: center;
+    font-size: 300%;
+}
+
+/* Text paragraphs */
+.section-wrapper p {
+    flex: 1;
+    max-width: 600px;
+    /* shorter line lengths for readability */
+    font-size: 1.15rem;
+    line-height: 1.8;
+}
+
+/* Alternate layout: image on right, text on left */
+.section-wrapper.alt {
+    flex-direction: row-reverse;
+}
+
+/* Responsive: stack on smaller screens */
+@media (max-width: 1024px) {
+    .section-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-wrapper.alt {
+        flex-direction: column;
+    }
+
+    .section-img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .section-wrapper p {
+        max-width: 100%;
+        font-size: 1rem;
+    }
+}
