@@ -4,20 +4,37 @@
     <title>KEM Arts</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+<!-- Header / Navigation -->
 <header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="products.html">Gallery</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact us</a>
-    </nav>
+    <div class="nav-container">
+        <div class="logo"><a href="index.html">KEM Arts</a></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Gallery</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact us</a>
+        </nav>
+    </div>
 </header>
-<div class="content">
 
-    <body>
-        <h1>Contact us</h1>
-        <br>
-        <!-- This gives the user a place to input their details to be contacted -->
+
+<body>
+    <div class="hero">
+        <div class="hero-text-contact">
+            <h1>Contact us</h1>
+        </div>
+    </div>
+    <!-- This gives the user a place to input their details to be contacted -->
+    <div class="contact">
+        <div class="contact-text">
+            <h2>Get in Touch</h2>
+            <p1>For inquiries about artwork, commissions, or collaborations, please use the form below. Alternatively,
+                you may reach us directly using the contact details provided, and we will respond as promptly as
+                possible.</p1>
+            <div class="spacer"></div>
+            <p2>Email: <a href="mailto:KEMArts2025@gmail.com">KEMArts2025@gmail.com</a></p2>
+            <p3>Phone: <a href="tel:0832290861">083 229 0861</a></p3>
+        </div>
         <form action="#" method="post">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required><br><br>
@@ -25,19 +42,22 @@
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required><br><br>
 
-            <label for="message">Message:</label><br>
+            <label for="message">Message:</label>
             <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
 
             <button type="submit">Send</button>
-        </form>
-        <br>
-        <p>Other ways to contact us</p>
-        <ul>
-            <li>Email: kemarts2025@gmail.com</li>
-            <li>Phone: +27 83 229 0861</li>
-            <li>Instagram: <a href="https://www.instagram.com/k.e.m.arts/">@K.E.M.arts</a></li>
-        </ul>
-    </body>
-</div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <p>Email: <a href="mailto:KEMArts2025@gmail.com">KEMArts2025@gmail.com</a></p>
+        <p> Phone: <a href="tel:0832290861">083 229 0861</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/k.e.m.arts/">@K.E.M.arts</a></p>
+        <p>Coffee Shop Location: <a
+                href="https://www.google.com/maps/place/Issie+Kitchen+Caf%C3%A9,+10+Van+Riebeeck+St,+Bredasdorp,+7280/data=!4m2!3m1!1s0x1dd195be3b97f3e7:0x55e75b1717592be9?utm_source=mstt_1&entry=gps&lucs=47068615,,47075915&g_ep=CAESCjExLjEwNi41MDIYACDXggMqEjQ3MDY4NjE1LCw0NzA3NTkxNUICWkE%3D">Issie's
+                Kitchen Cafe</a></p>
+        <p>&copy; 2025 KEM Arts. All rights reserved.</p>
+    </footer>
+</body>
+
 
 </html>
