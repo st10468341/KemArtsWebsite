@@ -161,3 +161,6 @@ Instagram: @K.E.M.arts
 
 Coffee Shop Location: Issie’s Kitchen Cafe, Bredasdorp, South Africa
 
+References:
+
+IIE 2025. Web Development (Introduction). Module Manual. The Independent Institute of Education.
