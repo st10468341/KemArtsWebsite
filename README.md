@@ -1,77 +1,163 @@
-1. Organization Overview
+KEM Arts Website
+Project Overview
 
-Name: KEM Arts
+KEM Arts is an independent art business founded by Kyle-Ethan Meiring. The brand began by showcasing artworks in local coffee shops, occasional exhibitions, and primarily using Instagram for online presence. While effective for engagement, the absence of a professional website limits growth and sales opportunities. This project aims to build a professional, responsive website to showcase KEM Arts’ portfolio, support sales, and strengthen the brand identity.
 
-KEM Arts is an independent art business that began by displaying pieces in local coffee shops, exhibiting occasionally, and using Instagram as its main online space. While this has helped build a small following, the lack of a professional website limits growth. A dedicated site will act as a central hub, showcasing the artist’s portfolio, supporting sales, and strengthening the brand’s identity.
+The website emphasizes accessibility, visual appeal, and usability, acting as a central hub for exhibitions, collections, and direct customer engagement.
 
-Mission and Vision:
+Mission and Vision
 
-The mission is to create meaningful and accessible art that connects with a broad audience. The vision is to expand into a professional online presence, positioning KEM Arts as a recognized brand that can reach audiences beyond social media and local exhibitions.
+Mission: To create meaningful, high-quality, and accessible artwork that resonates with a broad audience.
 
-Target Audience:
+Vision: To expand KEM Arts into a professional online presence, positioning the brand as recognized and credible beyond social media and local exhibitions.
 
-The target audience includes young professionals, collectors, and art enthusiasts aged 18–40 who value creative, personalized artwork and often engage with cultural spaces like coffee shops and exhibitions.
+Target Audience
 
-3. Website Goals and Objectives
-The website will provide a professional space for growth.
+Young professionals, collectors, and art enthusiasts aged 18–40.
 
-•	Build a central hub for all exhibitions, updates, and artwork, reducing reliance on Instagram.
+Individuals who value personalized, creative artwork.
 
-•	Provide an online store where prints and originals can be purchased securely.
+People who engage with cultural spaces such as coffee shops, pop-up exhibitions, and online art communities.
 
-•	Create a professional portfolio to attract gallery opportunities and collaborations.
+Website Goals
 
-•	Establish a mailing list to keep audiences engaged with exhibitions and new collections.
+The website is designed to:
+
+Provide a central hub for exhibitions, updates, and artwork, reducing reliance on Instagram.
+
+Offer a secure online store for prints and original artworks.
+
+Showcase a professional portfolio to attract gallery opportunities and collaborations.
+
+Establish a mailing list to keep audiences engaged with exhibitions, new collections, and promotions.
+
+Sitemap
 
 <img width="707" height="597" alt="sitemap" src="https://github.com/user-attachments/assets/7093eff0-2c86-4331-b296-01ff04f605e7" />
 
-4. Current Website Analysis
+Proposed structure:
 
-Currently, KEM Arts relies only on Instagram. While it provides strong visuals and good engagement, it lacks e-commerce tools, structured portfolios, and professional presentation. A website will build on this foundation by adding sales functionality and a polished image.
+Homepage: Featured and recent artworks, links to collections.
 
-5. Proposed Website Features and Functionality
+About Page: Artist biography, mission, and vision.
 
-The website will feature:
+Gallery/Portfolio: Categorized display of artworks.
 
-•	Homepage with featured and recent artwork and links to collections.
+Contact Page: Contact form, social links, and location information.
 
-•	About Page with an artist biography.
+Current Website Analysis
 
-•	Gallery/Portfolio with categorized works.
+Currently, KEM Arts relies solely on Instagram. While Instagram provides strong visuals and engagement, it lacks:
 
-•	Contact Page with a form and social links.
- 
-6. Design and User Experience
+E-commerce functionality
 
-The design will highlight the art while keeping usability simple.
+Structured portfolio organization
 
-•	Color Scheme: Neutral backgrounds with accents from the artwork.
+Professional branding and presentation
 
-•	Typography: Modern sans-serif (Aptos) for readability and structure.
+The website will build upon Instagram’s foundation by offering a polished, user-friendly platform with full sales capabilities.
 
-•	Layout: Grid-based, minimalist, and image-focused.
+Features and Functionality
 
-•	UX: Mobile optimization, quick loading, and a smooth checkout process.
+Homepage: Hero section with featured artwork, welcome text, links to collections.
 
-7. Technical Requirements
+About Page: Detailed biography, artist journey, art style, mission, and exhibitions.
 
-The site will require reliable hosting (e.g., Bluehost), a domain name such as kemarts.com, and development with HTML, CSS, and JavaScript. WordPress or Shopify will be used for content management and e-commerce.
+Gallery Page: Grid-based artwork portfolio with images, titles, prices (“Sold” or available), and contact buttons.
 
-8. Timeline and Milestones
+Contact Page: Form for inquiries, email/phone information, Instagram link, and Google Maps location of the coffee shop display.
 
-•	Week 1–2: Planning and wireframes.
+E-commerce Integration: Secure purchase options for prints and originals.
 
-•	Week 3–4: Development and content upload.
+Interactive Elements:
 
-•	Week 5: Testing across devices.
+Hero sections with slide-in text animation
 
-•	Week 6: Launch and analytics setup.
+Zoom effect on gallery images
 
-9. Budget
+Responsive design for mobile and desktop
 
-•	Domain and hosting: ±$100/year.
+Navigation menu highlighting active page
 
-•	Development and design: $1,500–$2,000.
+Design and User Experience
 
-•	Maintenance and updates: $200/year.
+Color Scheme: Neutral backgrounds with accents inspired by artworks.
+
+Typography: Modern sans-serif font (Aptos) for readability.
+
+Layout: Minimalist, grid-based, and image-focused.
+
+UX: Mobile optimization, fast loading, smooth checkout experience, and intuitive navigation.
+
+Technical Requirements
+
+Hosting: Reliable provider (e.g., Bluehost).
+
+Domain Name: kemarts.com (or similar).
+
+Development: HTML, CSS, JavaScript.
+
+CMS/E-commerce: WordPress or Shopify for content management and sales functionality.
+
+Maintenance: Regular updates for security, content, and performance.
+
+Timeline and Milestones
+Week	Task
+1–2	Planning, wireframes, content organization
+3–4	Development, content upload, layout implementation
+5	Testing across devices and browsers
+6	Launch, analytics setup, and final QA
+Budget
+
+Domain and Hosting: ~$100/year
+
+Development and Design: $1,500–$2,000
+
+Maintenance and Updates: $200/year
+
+File Structure
+KEM-Arts-Website/
+
+  index.html           # Homepage
+  about.html           # About page
+  products.html        # Gallery/Portfolio page
+  contact.html         # Contact page
+
+  css/
+     style.css        # Main stylesheet
+
+  images/              # All artwork and display images
+     Main-Face.jpg
+     Eagle.webp
+     Hyena.webp
+     Hippo.webp
+     Rhino.webp
+     artist.jpeg
+     ... (additional artwork images)
+
+  README.md            # Project documentation
+
+Notes on Implementation
+
+All pages use consistent header and footer for easy navigation.
+
+Hero sections include images and overlay text with slide-in animations.
+
+Gallery/portfolio displays artworks in cards with clickable “Contact” buttons linking to the contact page.
+
+Pricing labels reflect “Sold” or availability, maintaining clarity for potential buyers.
+
+The website emphasizes responsive design and accessibility for all devices.
+
+Contact Information
+
+For project inquiries or collaboration opportunities:
+
+Email: KEMArts2025@gmail.com
+
+Phone: 083 229 0861
+
+Instagram: @K.E.M.arts
+
+Coffee Shop Location: Issie’s Kitchen Cafe, Bredasdorp, South Africa
 
