@@ -1,63 +1,84 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- Declares the document type as HTML5 -->
 
 <head>
-    <title>KEM Arts</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>KEM Arts</title> <!-- Title shown in the browser tab -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Link to external CSS file for styling -->
 </head>
-<!-- Header / Navigation -->
+
+<!-- ================= HEADER / NAVIGATION ================= -->
 <header>
-    <div class="nav-container">
-        <div class="logo"><a href="index.html">KEM Arts</a></div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="products.html">Gallery</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact us</a>
+    <div class="nav-container"> <!-- Container for navigation bar -->
+        <div class="logo"><a href="index.html">KEM Arts</a></div> <!-- Logo linking to homepage -->
+        <nav> <!-- Navigation menu -->
+            <a href="index.html">Home</a> <!-- Link to homepage -->
+            <a href="products.html">Gallery</a> <!-- Link to gallery page -->
+            <a href="about.html">About</a> <!-- Link to about page -->
+            <a href="contact.html">Contact us</a> <!-- Link to contact page -->
         </nav>
     </div>
 </header>
 
-
 <body>
-    <div class="hero">
-        <div class="hero-text-contact">
+    <!-- ================= HERO SECTION ================= -->
+    <div class="hero"> <!-- Hero banner area -->
+        <div class="hero-text-contact"> <!-- Contact page heading inside hero -->
             <h1>Contact us</h1>
         </div>
     </div>
-    <!-- This gives the user a place to input their details to be contacted -->
+
+    <!-- ================= CONTACT SECTION ================= -->
+    <!-- Section where users can either see contact info or fill out a form -->
     <div class="contact">
-        <div class="contact-text">
+        <div class="contact-text"> <!-- Text section providing contact info -->
             <h2>Get in Touch</h2>
-            <p1>For inquiries about artwork, commissions, or collaborations, please use the form below. Alternatively,
+            <!-- Description text for visitors -->
+            <p class="contact-description">
+                For inquiries about artwork, commissions, or collaborations, please use the form below. Alternatively,
                 you may reach us directly using the contact details provided, and we will respond as promptly as
-                possible.</p1>
-            <div class="spacer"></div>
-            <p2>Email: <a href="mailto:KEMArts2025@gmail.com">KEMArts2025@gmail.com</a></p2>
-            <p3>Phone: <a href="tel:0832290861">083 229 0861</a></p3>
+                possible.
+            </p>
+
+            <div class="spacer"></div> <!-- Spacer for layout/visual gap -->
+
+            <!-- Email and phone details -->
+            <p class="contact-info">
+                Email: <a href="mailto:KEMArts2025@gmail.com">KEMArts2025@gmail.com</a>
+            </p>
+            <p class="contact-info">
+                Phone: <a href="tel:0832290861">083 229 0861</a>
+            </p>
         </div>
-        <form action="#" method="post">
+
+        <!-- ================= CONTACT FORM ================= -->
+        <!-- Simple form for collecting visitor details -->
+        <form action="#" method="post"> <!-- "action" is placeholder (#); "method=post" sends data securely -->
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br><br>
+            <input type="text" id="name" name="name" required><br><br> <!-- Name input field -->
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
+            <input type="email" id="email" name="email" required><br><br> <!-- Email input field -->
 
             <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
+            <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br> <!-- Message box -->
 
-            <button type="submit">Send</button>
+            <button type="submit">Send</button> <!-- Submit button -->
+        </form>
     </div>
-    <!-- Footer -->
+
+    <!-- ================= FOOTER ================= -->
     <footer>
+        <!-- Repeated contact info for easy access -->
         <p>Email: <a href="mailto:KEMArts2025@gmail.com">KEMArts2025@gmail.com</a></p>
-        <p> Phone: <a href="tel:0832290861">083 229 0861</a></p>
+        <p>Phone: <a href="tel:0832290861">083 229 0861</a></p>
         <p>Instagram: <a href="https://www.instagram.com/k.e.m.arts/">@K.E.M.arts</a></p>
-        <p>Coffee Shop Location: <a
-                href="https://www.google.com/maps/place/Issie+Kitchen+Caf%C3%A9,+10+Van+Riebeeck+St,+Bredasdorp,+7280/data=!4m2!3m1!1s0x1dd195be3b97f3e7:0x55e75b1717592be9?utm_source=mstt_1&entry=gps&lucs=47068615,,47075915&g_ep=CAESCjExLjEwNi41MDIYACDXggMqEjQ3MDY4NjE1LCw0NzA3NTkxNUICWkE%3D">Issie's
-                Kitchen Cafe</a></p>
-        <p>&copy; 2025 KEM Arts. All rights reserved.</p>
+        <p>Coffee Shop Location:
+            <a
+                href="https://www.google.com/maps/place/Issie+Kitchen+Caf%C3%A9,+10+Van+Riebeeck+St,+Bredasdorp,+7280/data=!4m2!3m1!1s0x1dd195be3b97f3e7:0x55e75b1717592be9?utm_source=mstt_1&entry=gps&lucs=47068615,,47075915&g_ep=CAESCjExLjEwNi41MDIYACDXggMqEjQ3MDY4NjE1LCw0NzA3NTkxNUICWkE%3D">
+                Issie's Kitchen Cafe
+            </a>
+        </p>
+        <p>&copy; 2025 KEM Arts. All rights reserved.</p> <!-- Copyright -->
     </footer>
 </body>
-
 
 </html>

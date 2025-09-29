@@ -1,35 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Defines the document type as HTML5 -->
+<html lang="en"> <!-- Root element of the HTML document, with language set to English -->
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KEM Arts</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8"> <!-- Sets character encoding to UTF-8 (supports most characters worldwide) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsive scaling on mobile -->
+    <title>KEM Arts</title> <!-- Title that appears in the browser tab -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Links to external CSS file for styling -->
 </head>
 
 <body>
-    <!-- Header / Navigation -->
+    <!-- ================= HEADER / NAVIGATION ================= -->
     <header>
-        <div class="nav-container">
-            <div class="logo"><a href="index.html">KEM Arts</a></div>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="products.html">Gallery</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact us</a>
+        <div class="nav-container"> <!-- Container for navigation elements -->
+            <div class="logo"><a href="index.html">KEM Arts</a></div> <!-- Logo linking to homepage -->
+            <nav> <!-- Navigation menu -->
+                <a href="index.html">Home</a> <!-- Link to homepage -->
+                <a href="products.html">Gallery</a> <!-- Link to gallery page -->
+                <a href="about.html">About</a> <!-- Link to about page -->
+                <a href="contact.html">Contact us</a> <!-- Link to contact page -->
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <a href="products.html" class="artwork">
+    <!-- ================= HERO SECTION ================= -->
+    <section id="home" class="hero"> <!-- Hero banner section -->
+        <a href="products.html" class="artwork"> <!-- Featured artwork links to products page -->
             <img src="images/Main-Face.jpg" srcset="images/Main-Face.jpg 1200w" sizes="100vw" alt="Featured Artwork"
-                class="hero-img">
+                class="hero-img"> <!-- Responsive featured image -->
         </a>
-        <div class="hero-text">
-            <h1 class="slide-in-right">Welcome to KEM Arts</h1>
+        <div class="hero-text"> <!-- Text overlay on hero section -->
+            <h1 class="slide-in-right">Welcome to KEM Arts</h1> <!-- Main welcome heading with animation -->
             <p class="slide-in-right">
                 KEM Arts is a South African art business created by young artist Kyle-Ethan Meiring. Each piece is made
                 with passion using acrylic paints and palette knives to create textured and expressive art.
@@ -37,15 +37,15 @@
         </div>
     </section>
 
-    <!-- About Artist Section -->
-    <section id="about" class="about">
-        <h2 class="slide-in-left">About the Artist</h2>
-        <div class="about-content">
-            <a href="about.html">
+    <!-- ================= ABOUT ARTIST SECTION ================= -->
+    <section id="about" class="about"> <!-- About section -->
+        <h2 class="slide-in-left">About the Artist</h2> <!-- Section heading with animation -->
+        <div class="about-content"> <!-- Flex container for image + text -->
+            <a href="about.html"> <!-- Image links to dedicated about page -->
                 <img src="images/artist.jpeg" srcset="images/artist.jpeg 1200w" sizes="100vw" alt="Artist"
-                    class="artist-img">
+                    class="artist-img"> <!-- Responsive artist photo -->
             </a>
-            <div class="about-text">
+            <div class="about-text"> <!-- Text block describing artist -->
                 <p class="slide-in-left">
                     My name is Kyle-Ethan Meiring, I am 18 years old, and I was born on 14 April 2007. I have been
                     practicing art since I was 8 under the guidance of Braam Coetsee. Through my work, I hope to
@@ -55,10 +55,11 @@
         </div>
     </section>
 
-    <!-- What We Offer Section -->
-    <section class="offer">
+    <!-- ================= WHAT WE OFFER SECTION ================= -->
+    <section class="offer"> <!-- Section showing services or offerings -->
         <h2 class="slide-in-right">What We Offer</h2>
-        <div class="offer-cards">
+        <div class="offer-cards"> <!-- Container for three service cards -->
+            <!-- Card 1 -->
             <a href="products.html" class="offer-card slide-in-right">
                 <h3>Original Artworks</h3>
                 <p>
@@ -66,14 +67,15 @@
                     textured, and made with passion.
                 </p>
             </a>
+            <!-- Card 2 -->
             <a href="about.html" class="offer-card slide-in-right">
                 <h3>Local Exhibitions</h3>
                 <p>
                     Experience KEM Arts in local coffee shops and exhibitions. Small collections are released to keep
-                    the
-                    work affordable and special.
+                    the work affordable and special.
                 </p>
             </a>
+            <!-- Card 3 -->
             <a href="contact.html" class="offer-card slide-in-right">
                 <h3>Commissions</h3>
                 <p>
@@ -84,10 +86,10 @@
         </div>
     </section>
 
-    <!-- Stay Connected Section -->
-    <section class="connect">
-        <div class="connect-wrapper">
-            <div class="connect-text">
+    <!-- ================= STAY CONNECTED SECTION ================= -->
+    <section class="connect"> <!-- Section promoting social media / contact -->
+        <div class="connect-wrapper"> <!-- Container for layout -->
+            <div class="connect-text"> <!-- Left side: text content -->
                 <h2 class="slide-in-left">Stay Connected</h2>
                 <p class="slide-in-left">
                     Follow KEM Arts on Instagram to see new collections and updates. You can also visit the local coffee
@@ -95,20 +97,21 @@
                 </p>
                 <a href="https://www.instagram.com/k.e.m.arts/" class="btn fade-in delay-2">Follow on Instagram</a>
             </div>
-            <div class="connect-image">
+            <div class="connect-image"> <!-- Right side: image with link -->
                 <a
                     href="https://www.google.com/maps/place/Issie+Kitchen+Caf%C3%A9,+10+Van+Riebeeck+St,+Bredasdorp,+7280">
                     <img src="images/issie-display.webp" srcset="images/issie-display.webp 1200w" sizes="100vw"
-                        alt="Issie's Kitchen Display">
+                        alt="Issie's Kitchen Display"> <!-- Coffee shop display image -->
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery">
+    <!-- ================= FEATURED ARTWORKS GALLERY ================= -->
+    <section id="gallery" class="gallery"> <!-- Featured artworks gallery section -->
         <h2 class="slide-in-right">Featured Artworks</h2>
-        <div class="artworks">
+        <div class="artworks"> <!-- Container holding artwork thumbnails -->
+            <!-- Each artwork is clickable and links to products page -->
             <a href="products.html" class="artwork"><img src="images/Eagle.webp" srcset="images/Eagle.webp 1200w"
                     sizes="100vw" alt="Artwork 1" class="zoom"></a>
             <a href="products.html" class="artwork"><img src="images/Hyena.webp" srcset="images/Hyena.webp 1200w"
@@ -128,15 +131,15 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>Email: <a href="mailto:KEMArts2025@gmail.com">KEMArts2025@gmail.com</a></p>
-        <p>Phone: <a href="tel:0832290861">083 229 0861</a></p>
-        <p>Instagram: <a href="https://www.instagram.com/k.e.m.arts/">@K.E.M.arts</a></p>
+    <!-- ================= FOOTER ================= -->
+    <footer> <!-- Footer section with contact info -->
+        <p>Email: <a href="mailto:KEMArts2025@gmail.com">KEMArts2025@gmail.com</a></p> <!-- Email link -->
+        <p>Phone: <a href="tel:0832290861">083 229 0861</a></p> <!-- Click-to-call phone number -->
+        <p>Instagram: <a href="https://www.instagram.com/k.e.m.arts/">@K.E.M.arts</a></p> <!-- Instagram link -->
         <p>Coffee Shop Location: <a
                 href="https://www.google.com/maps/place/Issie+Kitchen+Caf%C3%A9,+10+Van+Riebeeck+St,+Bredasdorp,+7280">Issie's
-                Kitchen Cafe</a></p>
-        <p>&copy; 2025 KEM Arts. All rights reserved.</p>
+                Kitchen Cafe</a></p> <!-- Google Maps location -->
+        <p>&copy; 2025 KEM Arts. All rights reserved.</p> <!-- Copyright notice -->
     </footer>
 </body>
 
