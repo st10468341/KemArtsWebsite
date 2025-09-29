@@ -1,5 +1,5 @@
-Changelog – KEM Arts Website
-[2025-08-26] – Initial Commit and Basic Setup
+Changelog - KEM Arts Website
+[2025-08-26] - Initial Commit and Basic Setup
 
 Initialized repository with basic project structure.
 
@@ -9,7 +9,7 @@ Added folder structure: css/, images/.
 
 Created empty style.css for styling.
 
-[2025-09-25] – Home Page Development
+[2025-09-25] - Home Page Development
 
 Added static navigation bar with links to Home, Gallery, About, and Contact.
 
@@ -23,7 +23,7 @@ Added header and footer elements consistent across pages.
 
 Implemented CSS reset for cross-browser consistency.
 
-[2025-09-25] – About Page
+[2025-09-25] - About Page
 
 Added about.html.
 
@@ -41,7 +41,7 @@ Added “Contact” section with artwork image, text, and link to contact page.
 
 Added footer contact information consistent with home page.
 
-[2025-09-29] – Products/Gallery Page
+[2025-09-29] - Products/Gallery Page
 
 Added products.html (Gallery page).
 
@@ -59,7 +59,7 @@ Contact button linking to contact page
 
 Added footer with contact information and coffee shop location.
 
-[2025-09-29] – Contact Page
+[2025-09-29] - Contact Page
 
 Added contact.html.
 
@@ -71,7 +71,7 @@ Added contact form with fields: Name, Email, Message, Submit button.
 
 Added footer with repeated contact information for consistency.
 
-[2025-09-29] – CSS and Styling Updates
+[2025-09-29] - CSS and Styling Updates
 
 Added external CSS file style.css with:
 
@@ -93,7 +93,7 @@ Ensured header, footer, and navigation bar are uniform across all pages.
 
 Alternating layouts for About page sections (image left/text right, image right/text left).
 
-[2025-09-29] – Project Planning and Documentation
+[2025-09-29] - Project Planning and Documentation
 
 Created initial README with:
 
@@ -127,7 +127,7 @@ Updated README with consolidated HTML, CSS, and planning content.
 
 Added GitHub-style CHANGELOG notes based on local commits and development steps.
 
-[2025-09-29] – Git and Versioning Notes
+[2025-09-29] - Git and Versioning Notes
 
 Merged GitHub classroom repository with local code.
 
