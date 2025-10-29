@@ -2,10 +2,25 @@
 <html lang="en"> <!-- Root element of the HTML document, with language set to English -->
 
 <head>
-    <meta charset="UTF-8"> <!-- Sets character encoding to UTF-8 (supports most characters worldwide) -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsive scaling on mobile -->
-    <title>KEM Arts</title> <!-- Title that appears in the browser tab -->
-    <link rel="stylesheet" href="css/style.css"> <!-- Links to external CSS file for styling -->
+    <!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <meta charset="UTF-8"> <!-- Sets character encoding to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive scaling -->
+
+    <!-- SEO Title Tag -->
+    <title>KEM Arts | South African Acrylic Paintings</title>
+
+    <!-- Meta Description -->
+    <meta name="description"
+        content="Discover unique acrylic paintings by young South African artist Kyle-Ethan Meiring. Original artworks, local exhibitions, and custom commissions.">
+
+    <!-- Meta Keywords -->
+    <meta name="keywords"
+        content="KEM Arts, Kyle-Ethan Meiring, South African artist, acrylic paintings, original artworks, art commissions, local exhibitions">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -97,13 +112,11 @@
                 </p>
                 <a href="https://www.instagram.com/k.e.m.arts/" class="btn fade-in delay-2">Follow on Instagram</a>
             </div>
-            <div class="connect-image"> <!-- Right side: image with link -->
-                <a
-                    href="https://www.google.com/maps/place/Issie+Kitchen+Caf%C3%A9,+10+Van+Riebeeck+St,+Bredasdorp,+7280">
-                    <img src="images/issie-display.webp" srcset="images/issie-display.webp 1200w" sizes="100vw"
-                        alt="Issie's Kitchen Display"> <!-- Coffee shop display image -->
-                </a>
-            </div>
+            <div class="connect-image">
+    <div id="map"></div> <!-- Leaflet map will render here -->
+</div>
+
+
         </div>
     </section>
 
@@ -141,6 +154,12 @@
                 Kitchen Cafe</a></p> <!-- Google Maps location -->
         <p>&copy; 2025 KEM Arts. All rights reserved.</p> <!-- Copyright notice -->
     </footer>
+    <!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<!-- Custom map script -->
+<script src="js/maps.js"></script>
+
 </body>
 
 </html>
