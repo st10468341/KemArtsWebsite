@@ -732,9 +732,15 @@ footer a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
+    padding: 2rem;
     max-width: 1400px;
     margin: 0 auto;
+
+    /* Prevent a single card from stretching too wide */
+    justify-content: start;
+    /* instead of default stretch/center */
 }
+
 
 .art-card {
     background-color: white;
@@ -748,6 +754,11 @@ footer a:hover {
     padding: 1rem;
     border: #000000 3px solid;
     gap: 1rem;
+    width: 100%;
+    max-width: 300px;
+    /* keeps the card from expanding too much */
+    margin: 0 auto;
+    /* center the card if only one */
 }
 
 .art-card img {
@@ -815,4 +826,32 @@ footer a:hover {
 
 .art-card:hover {
     transform: translateY(-5px) scale(1.02);
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.search-input,
+.sort-select {
+    padding: 0.8rem 1rem;
+    font-size: 1.2rem;
+    /* bigger text */
+    border: 2px solid #1f2a35;
+    border-radius: 8px;
+    outline: none;
+}
+
+.search-input {
+    width: 300px;
+    /* make input wider */
+}
+
+.sort-select {
+    width: 300px;
+    /* adjust width as needed */
 }
