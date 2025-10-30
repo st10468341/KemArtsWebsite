@@ -1,9 +1,9 @@
-<!DOCTYPE html> <!-- Declares HTML5 document type -->
-<html lang="en"> <!-- Root element, language set to English -->
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8"> <!-- Sets character encoding to UTF-8 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive scaling -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Title Tag -->
     <title>Gallery | KEM Arts Acrylic Paintings by Kyle-Ethan Meiring</title>
@@ -22,22 +22,31 @@
 </head>
 
 
-<body> <!-- ================= HEADER / NAVIGATION ================= -->
+<body>
+    <!-- ================= HEADER / NAVIGATION ================= -->
     <header>
-        <div class="nav-container"> <!-- Wrapper for logo and navigation -->
-            <div class="logo"><a href="index.html">KEM Arts</a></div> <!-- Logo text linking back to homepage -->
-            <nav> <!-- Main navigation bar --> <a href="index.html">Home</a> <a href="products.html"
-                    class="active">Gallery</a> <!-- Active link highlights current page --> <a
-                    href="about.html">About</a> <a href="contact.html">Contact us</a> </nav>
+        <div class="nav-container">
+            <div class="logo"><a href="index.html">KEM Arts</a></div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="products.html" class="active">Gallery</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact us</a>
+            </nav>
         </div>
-    </header> <!-- ================= HERO SECTION ================= -->
-    <section class="hero"> <!-- Hero banner introducing Gallery page -->
+    </header>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero">
         <div class="hero-text">
-            <h1 class="slide-in-right">Gallery</h1> <!-- Animated heading -->
-            <p class="slide-in-right"> Explore a collection of semi-abstract wild animal artworks created with acrylic
-                paints and palette knives. Each piece is expressive, textured, and unique. </p>
+            <h1 class="slide-in-right">Gallery</h1>
+            <p class="slide-in-right">
+                Explore a collection of semi-abstract wild animal artworks created with acrylic
+                paints and palette knives. Each piece is expressive, textured, and unique.
+            </p>
         </div>
     </section>
+
     <!-- ================= ARTWORKS GALLERY ================= -->
     <section class="artworks-gallery">
         <div class="controls">
@@ -55,17 +64,33 @@
         </div>
     </section>
 
+    <!-- ================= LIGHTBOX MODAL ================= -->
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+        <button class="lightbox-nav lightbox-prev" aria-label="Previous image">&#10094;</button>
+        <button class="lightbox-nav lightbox-next" aria-label="Next image">&#10095;</button>
+        <div class="lightbox-content">
+            <img src="" alt="" class="lightbox-image">
+            <div class="lightbox-info">
+                <h2 class="lightbox-title"></h2>
+                <p class="lightbox-description"></p>
+            </div>
+        </div>
+    </div>
+
     <!-- ================= FOOTER ================= -->
-    <footer> <!-- Footer contact information -->
+    <footer>
         <p>Email: <a href="mailto:KEMArts2025@gmail.com">KEMArts2025@gmail.com</a></p>
         <p>Phone: <a href="tel:0832290861">083 229 0861</a></p>
         <p>Instagram: <a href="https://www.instagram.com/k.e.m.arts/">@K.E.M.arts</a></p>
         <p>Coffee Shop Location: <a
                 href="https://www.google.com/maps/place/Issie+Kitchen+Caf%C3%A9,+10+Van+Riebeeck+St,+Bredasdorp,+7280">
                 Issie's Kitchen Cafe </a> </p>
-        <p>&copy; 2025 KEM Arts. All rights reserved.</p> <!-- Copyright -->
+        <p>&copy; 2025 KEM Arts. All rights reserved.</p>
     </footer>
+
     <script src="js/products.js"></script>
+    <script src="js/lightbox.js"></script>
 </body>
 
 </html>

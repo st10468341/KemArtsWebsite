@@ -509,85 +509,153 @@ footer a:hover {
     }
 }
 
-/* Contact Section */
+/* Contact Section - Improved */
 
 .contact {
-    background-color: #fff;
-    padding: 2rem 1rem;
+    background-color: #ffffff;
+    padding: 4rem 2rem;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 10rem;
+    gap: 8rem;
     flex-wrap: wrap;
+    font-family: 'Arial', sans-serif;
 }
 
 .hero-text-contact {
-    font-size: 350%;
+    font-size: 3.5rem;
     max-width: 600px;
     margin: 0;
     text-align: left;
-
+    font-weight: bold;
+    line-height: 1.2;
 }
 
 .contact-text {
-    margin-top: 4rem;
-    font-size: 2.1rem;
-    line-height: 1.8;
-    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    line-height: 1.6;
     max-width: 600px;
     text-align: center;
+    color: #333;
 }
 
 .contact form {
-    margin-top: 3rem;
+    margin-top: 2rem;
     max-width: 600px;
     width: 100%;
     text-align: left;
     display: flex;
     flex-direction: column;
-    gap: 0.1rem;
+    gap: 1rem;
 }
 
 .contact label {
-    color: #00000075;
-    font-size: 2rem;
-    font-weight: normal;
+    color: #555;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
 }
 
 .contact input[type="text"],
 .contact input[type="email"],
+.contact select,
 .contact textarea {
     width: 100%;
-    height: 60px;
-    padding: 0.75rem 1rem;
+    padding: 0.85rem 1rem;
     font-size: 1.25rem;
     border: 2px solid #ccc;
-    border-radius: 8px;
+    border-radius: 10px;
     box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact input:focus,
+.contact textarea:focus,
+.contact select:focus {
+    outline: none;
+    border-color: #1f2a35;
+    box-shadow: 0 0 10px rgba(31, 42, 53, 0.2);
 }
 
 .contact textarea {
-    height: 150px;
-    font-family: arial, sans-serif;
-    ;
+    min-height: 150px;
+    resize: vertical;
+    font-family: inherit;
 }
 
 .contact button {
     background-color: #1f2a35;
     color: #fff;
     border: none;
-    padding: 0.75rem 1.5rem;
-    font-size: 1.75rem;
-    border-radius: 8px;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-    margin-top: 0;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 1rem;
     align-self: flex-start;
 }
 
-.spacer {
-    height: 3rem;
+.contact button:hover {
+    background-color: #16202a;
+    transform: translateY(-2px);
 }
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.4rem;
+    margin-top: 0.5rem;
+}
+
+.feedback {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .contact {
+        flex-direction: column;
+        gap: 3rem;
+        padding: 3rem 1.5rem;
+    }
+
+    .hero-text-contact {
+        font-size: 2.8rem;
+        text-align: center;
+    }
+
+    .contact-text {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .contact input[type="text"],
+    .contact input[type="email"],
+    .contact select,
+    .contact textarea {
+        font-size: 1.1rem;
+        padding: 0.7rem 0.9rem;
+    }
+
+    .contact button {
+        font-size: 1.4rem;
+        padding: 0.85rem 1.5rem;
+    }
+
+    .hero-text-contact {
+        font-size: 2.2rem;
+    }
+
+    .contact-text {
+        font-size: 1.4rem;
+    }
+}
+
 
 /* Hero Section - About */
 .about-hero {
@@ -867,4 +935,192 @@ footer a:hover {
     height: 400px;
     border-radius: 12px;
 }
+/* ================= LIGHTBOX MODAL ================= */
+/* Add this section to the bottom of your css/style.css file */
 
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.lightbox.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    animation: zoomIn 0.3s ease;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.lightbox-image {
+    max-width: 100%;
+    max-height: 70vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-info {
+    text-align: center;
+    color: white;
+    max-width: 600px;
+}
+
+.lightbox-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.lightbox-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+/* Navigation Buttons */
+.lightbox-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: none;
+    font-size: 3rem;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 4px;
+    backdrop-filter: blur(10px);
+}
+
+.lightbox-nav:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.lightbox-prev {
+    left: 2rem;
+}
+
+.lightbox-next {
+    right: 2rem;
+}
+
+/* Close Button */
+.lightbox-close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+    line-height: 1;
+    padding: 0.5rem;
+}
+
+.lightbox-close:hover {
+    transform: rotate(90deg);
+    color: #ff6b6b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .lightbox-content {
+        max-width: 95%;
+        max-height: 95%;
+    }
+
+    .lightbox-image {
+        max-height: 60vh;
+    }
+
+    .lightbox-title {
+        font-size: 1.4rem;
+    }
+
+    .lightbox-description {
+        font-size: 0.9rem;
+    }
+
+    .lightbox-nav {
+        font-size: 2rem;
+        padding: 0.75rem 1rem;
+    }
+
+    .lightbox-prev {
+        left: 1rem;
+    }
+
+    .lightbox-next {
+        right: 1rem;
+    }
+
+    .lightbox-close {
+        top: 1rem;
+        right: 1rem;
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .lightbox-nav {
+        font-size: 1.5rem;
+        padding: 0.5rem 0.75rem;
+    }
+
+    .lightbox-prev {
+        left: 0.5rem;
+    }
+
+    .lightbox-next {
+        right: 0.5rem;
+    }
+
+    .lightbox-close {
+        top: 0.5rem;
+        right: 0.5rem;
+        font-size: 2rem;
+    }
+
+    .lightbox-title {
+        font-size: 1.2rem;
+    }
+
+    .lightbox-description {
+        font-size: 0.85rem;
+    }
+}

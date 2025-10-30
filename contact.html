@@ -1,100 +1,132 @@
-<!DOCTYPE html> <!-- Declares the document type as HTML5 -->
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8"> <!-- Sets character encoding to UTF-8 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive scaling -->
-
-    <!-- SEO Title Tag -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact KEM Arts | Get in Touch with Kyle-Ethan Meiring</title>
 
-    <!-- Meta Description -->
     <meta name="description" content="Reach out to KEM Arts, the South African art studio of Kyle-Ethan Meiring, for inquiries, commissions, collaborations, or local exhibition details.">
-
-    <!-- Meta Keywords -->
     <meta name="keywords" content="KEM Arts, Kyle-Ethan Meiring, contact, South African artist, acrylic paintings, original artworks, art commissions, inquiries, abstract art, gallery, local exhibitions">
-
-    <!-- Meta Author -->
     <meta name="author" content="KEM Arts, Kyle-Ethan Meiring">
 
-    <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("U-kWwI10PWHKalVdo"); 
+        })();
+    </script>
 </head>
 
-
-<!-- ================= HEADER / NAVIGATION ================= -->
 <header>
-    <div class="nav-container"> <!-- Container for navigation bar -->
-        <div class="logo"><a href="index.html">KEM Arts</a></div> <!-- Logo linking to homepage -->
-        <nav> <!-- Navigation menu -->
-            <a href="index.html">Home</a> <!-- Link to homepage -->
-            <a href="products.html">Gallery</a> <!-- Link to gallery page -->
-            <a href="about.html">About</a> <!-- Link to about page -->
-            <a href="contact.html">Contact us</a> <!-- Link to contact page -->
+    <div class="nav-container">
+        <div class="logo"><a href="index.html">KEM Arts</a></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Gallery</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" class="active">Contact us</a>
         </nav>
     </div>
 </header>
 
 <body>
-    <!-- ================= HERO SECTION ================= -->
-    <div class="hero"> <!-- Hero banner area -->
-        <div class="hero-text-contact"> <!-- Contact page heading inside hero -->
+    <div class="hero">
+        <div class="hero-text-contact">
             <h1>Contact us</h1>
         </div>
     </div>
 
-    <!-- ================= CONTACT SECTION ================= -->
-    <!-- Section where users can either see contact info or fill out a form -->
     <div class="contact">
-        <div class="contact-text"> <!-- Text section providing contact info -->
+        <div class="contact-text">
             <h2>Get in Touch</h2>
-            <!-- Description text for visitors -->
             <p class="contact-description">
                 For inquiries about artwork, commissions, or collaborations, please use the form below. Alternatively,
-                you may reach us directly using the contact details provided, and we will respond as promptly as
-                possible.
+                you may reach us directly using the contact details provided.
             </p>
 
-            <div class="spacer"></div> <!-- Spacer for layout/visual gap -->
-
-            <!-- Email and phone details -->
-            <p class="contact-info">
-                Email: <a href="mailto:KEMArts2025@gmail.com">KEMArts2025@gmail.com</a>
-            </p>
-            <p class="contact-info">
-                Phone: <a href="tel:0832290861">083 229 0861</a>
-            </p>
+            <p class="contact-info">Email: <a href="mailto:KEMArts2025@gmail.com">KEMArts2025@gmail.com</a></p>
+            <p class="contact-info">Phone: <a href="tel:0832290861">083 229 0861</a></p>
         </div>
 
-        <!-- ================= CONTACT FORM ================= -->
-        <!-- Simple form for collecting visitor details -->
-        <form action="#" method="post"> <!-- "action" is placeholder (#); "method=post" sends data securely -->
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br><br> <!-- Name input field -->
+        <!-- Enhanced Contact Form -->
+        <form id="contactForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br> <!-- Email input field -->
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+            <label for="inquiry">Reason for Inquiry:</label>
+            <select id="inquiry" name="inquiry" required>
+                <option value="">-- Select an option --</option>
+                <option value="Commission">Commission Request</option>
+                <option value="Purchase">Artwork Purchase</option>
+                <option value="Collaboration">Collaboration</option>
+                <option value="Exhibition">Exhibition Info</option>
+                <option value="Other">Other</option>
+            </select>
 
             <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br> <!-- Message box -->
+            <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
 
-            <button type="submit">Send</button> <!-- Submit button -->
+            <div class="checkbox-container">
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent">I consent to being contacted by KEM Arts.</label>
+            </div>
+
+            <button type="submit">Send Message</button>
+            <p id="formFeedback" class="feedback"></p>
         </form>
     </div>
 
-    <!-- ================= FOOTER ================= -->
     <footer>
-        <!-- Repeated contact info for easy access -->
         <p>Email: <a href="mailto:KEMArts2025@gmail.com">KEMArts2025@gmail.com</a></p>
         <p>Phone: <a href="tel:0832290861">083 229 0861</a></p>
         <p>Instagram: <a href="https://www.instagram.com/k.e.m.arts/">@K.E.M.arts</a></p>
         <p>Coffee Shop Location:
-            <a
-                href="https://www.google.com/maps/place/Issie+Kitchen+Caf%C3%A9,+10+Van+Riebeeck+St,+Bredasdorp,+7280/data=!4m2!3m1!1s0x1dd195be3b97f3e7:0x55e75b1717592be9?utm_source=mstt_1&entry=gps&lucs=47068615,,47075915&g_ep=CAESCjExLjEwNi41MDIYACDXggMqEjQ3MDY4NjE1LCw0NzA3NTkxNUICWkE%3D">
+            <a href="https://www.google.com/maps/place/Issie+Kitchen+Caf%C3%A9,+10+Van+Riebeeck+St,+Bredasdorp,+7280">
                 Issie's Kitchen Cafe
             </a>
         </p>
-        <p>&copy; 2025 KEM Arts. All rights reserved.</p> <!-- Copyright -->
+        <p>&copy; 2025 KEM Arts. All rights reserved.</p>
     </footer>
-</body>
 
+    <script>
+     const form = document.getElementById("contactForm");
+const feedback = document.getElementById("formFeedback");
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    if (!form.checkValidity()) {
+        feedback.textContent = "⚠️ Please fill out all required fields correctly.";
+        feedback.style.color = "red";
+        return;
+    }
+
+    // Prepare template parameters matching your template placeholders
+    const templateParams = {
+        name: form.name.value,
+        email: form.email.value,
+        inquiry: form.inquiry.value,
+        message: form.message.value,
+        time: new Date().toLocaleString(), // adds {{time}}
+    };
+
+    // Send email using your real service + template IDs
+    emailjs.send("service_vjk5lvb", "template_g2w193s", templateParams)
+        .then(function() {
+            feedback.textContent = "✅ Message sent successfully! We'll get back to you soon.";
+            feedback.style.color = "green";
+            form.reset();
+        }, function(error) {
+            feedback.textContent = "❌ Failed to send message. Please try again later.";
+            feedback.style.color = "red";
+            console.error("EmailJS error:", error);
+        });
+});
+
+    </script>
+</body>
 </html>
